@@ -17,7 +17,7 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     
     <!-- =========================
-      STYLESHEETS 
+        STYLESHEETS 
     ============================== -->
     <!-- BOOTSTRAP CSS -->
     <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
@@ -48,8 +48,8 @@
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 <style>
@@ -93,67 +93,35 @@
     <div class="main-container" id="page">
         <header id="nav1-1">
             <nav class="navbar fixed z-10 left-0 right-0 bg-transparent" id="">
-            <!-- navbar fixed on top: -->
-            <!--  
-                <nav class="navbar navbar-fixed-top" id="main-navbar" role="navigation">
-            -->
-            <!-- navbar static: -->
-            <!--
-                <nav class="navbar navbar-static-top" id="main-navbar" role="navigation">
-            -->
-            <!-- background transparent: -->
-            <!--
-                <nav class="navbar navbar-fixed-top bg-transparent" id="main-navbar" role="navigation">
-            -->
-                
-                <div class="container">
-                    
+                <div class=" flex items-center justify-between max-[991px]:justify-center"> 
                     <div class="navbar-header">
-                        <!-- -------  Menu Button for Mobile Devices ------
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button> 
-                        recommended sizes
-                            width: 150px;
-                            height: 35px; -->
-                        
                         <a href="" class="navbar-brand smooth-scroll"><img src="images/uzun_filo_logo.png" alt="logo"></a>
                     </div>
-                    <!-- /End Navbar Header -->
-
-                    <div class="" id="">
-                        <!-- Menu Links -->
-                        <ul class="nav navbar-nav navbar-right">
+                    <div class="max-[902px]:hidden">
+                        <ul class="nav max-[991px]:hidden navbar-nav navbar-right">
                             <li><a href="#hero9" class="smooth-scroll">Anasayafa</a></li>
                             <li><a href="#portfolio3-1" class="smooth-scroll">Araçlar</a></li>
-                            <li><a href="#features5-1" class="smooth-scroll">Özellikler</a></li>
-                            <li><a href="" class="btn-nav btn-red smooth-scroll">Teklif al</a></li>
-                        </ul><!-- /End Menu Links -->
-                    </div><!-- /End Navbar Collapse -->
-
-                </div><!-- /End Container -->
+                            <li><a href="#features5-1" class="smooth-scroll">Neden Biz?</a></li>
+                            <li><a href="#form" class="btn-nav btn-red smooth-scroll">Teklif al</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav><!-- /End Navbar -->
         </header>
         <!-- =========================
             HERO SECTION
         ============================== -->
-        <section id="hero9" class="bg-img hero-leadbox content-align-md h-screen" style="background-image:url('images/banner1.jpeg');">
-            <div class="overlay"></div>
-
+        <section id="hero9" class="bg-img hero-leadbox  h-screen max-[991px]:h-full" style="background-image:url('images/banner1.jpeg');">
+            <div id="form" class="overlay h-screen"></div>
             <div class="container">
-                <div class="row y-middle">
-                    <!-- Intro Text -->
-                    <div class="col-sm-12 col-md-5 text-white">
-                        <div class="text-[50px] font-semibold leading-tight mb-5">Uzun Dönem Araç Kiralamanın En İyisi!</div>
+                <div class="row y-middle flex items-center justify-between max-[991px]:flex-col">
+                    <div class=" col-md-6 text-white">
+                        <div class="text-[50px] font-semibold leading-tight mb-5 text-center">Uzun Dönem Araç Kiralamanın En İyisi!</div>
                         <div class="text-3xl">Uzun filo olarak, müşterilerimize uzun dönem araç kiralama konusunda en iyi hizmeti sunmayı hedefliyoruz. Geniş araç yelpazemiz ve özel hizmetlerimizle, müşterilerimizin beklentilerini karşılıyoruz.</div>   
                     </div>
-                    <div class="col-sm-12 col-md-5 col-md-offset-1">
-                        <!-- Mailchimp Form -->
-                        <form class="form-horizontal form-white bg-grey text-white"   action="https://formspree.io/f/xwkjovzj"
-                        method="POST">
+                    <div class="col-md-6 ">
+                        <!--  Form -->
+                        <form class="form-horizontal form-white bg-grey text-white"   action="https://formspree.io/f/xwkjovzj" method="POST">
                             <h4 class="text-center text-5xl font-semibold pb-5">Kolay Araç Kiralama</h4>
                             <p class="text-center m-b-md">Rezervasyon formumuzu doldurarak, araç kiralama taleplerinizi bize iletebilirsiniz.
                             </p>
@@ -170,219 +138,209 @@
                                 <button type="submit" class="btn btn-shadow bg-red-600">Hemen araç kiralayın</button>
                                 </div>
                         </form>
-
-                        <!-- <form style="background-color: beige;"
-                        action="https://formspree.io/f/xwkjovzj"
-                        method="POST"
-                        >
-                        <label>
-                          Your email:
-                          <input type="email" name="email">
-                        </label>
-                        <label>
-                          NAME:
-                          <input type="name" name="name">
-                        </label>
-                        <label>
-                          surname:
-                          <input type="surname" name="surname">
-                        </label>
-                        <label>
-                          Your message:
-                          <textarea name="message"></textarea>
-                        </label>
-                        <!-- your other form fields go here -->
-                        <button type="submit">Send</button>
-                        </form> -->
-
-                        <!-- Php Form -->
-                        <!--
-                        <form class="form-horizontal form-white bg-grey" id="callbackForm" role="form">
-                            <p class="success cb text-center"><i class="fa fa-check"></i> <strong>You have successfully subscribed.</strong></p>
-                            <p class="failed cb text-center"><i class="fa fa-exclamation-circle"></i><strong> Something went wrong!</strong></p>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="cbName" placeholder="Name" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="cbEmail" placeholder="Email" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="cbPhone" placeholder="Phone Number" required>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-shadow btn-red">START YOUR FREE TRIAL</button>
-                            </div>
-                        </form>
-                        -->
-                    </div><!-- /End  Form -->
-                </div><!-- /End Row -->
-            </div><!-- /End Container -->
-
+                    </div>
+                </div>
+            </div>
         </section>
+
         <div class="fixed bottom-5 right-5 z-10">
-          <a  href="https://wa.me/905456718690?text=Deneme%20mesaj" target="_blank"><img src="https://anilsenyurt.com.tr/wp-content/uploads/2015/02/WAlogo1.png" height="60" width="60" alt="WhatsApp ile iletişime geç"></a>
+            <a  href="https://wa.me/905456718690?text=Deneme%20mesaj" target="_blank"><img src="https://anilsenyurt.com.tr/wp-content/uploads/2015/02/WAlogo1.png" height="60" width="60" alt="WhatsApp ile iletişime geç"></a>
         </div>
         <!-- =========================
             PORTFOLIO
         ============================== -->
-        <section id="portfolio3-1" class="p-t-lg p-b-0 bg-edit">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-8 col-md-offset-2">
-                      <div class="section-header text-center wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                          <div class="title mb-5">En Çok Tercih Edilen Kiralık Araçlarımız</div>
-                          <div class="" style="font-size: 16px;line-height: 20px;">Geniş ve modern araç filosuyla müşterilerine en kaliteli hizmeti sunmayı hedefler. Müşterilerimizin ihtiyaçlarına göre seçilen araçlar, her zaman güvenli, konforlu ve yeni nesil özelliklere sahiptir.</div>
-                      </div>
-                  </div>
-              </div>
-          </div>
+            <section id="portfolio3-1" class="p-t-lg p-b-0 bg-edit">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="section-header text-center wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="title mb-5">En Çok Tercih Edilen Kiralık Araçlarımız</div>
+                                <div class="" style="font-size: 16px;line-height: 20px;">Geniş ve modern araç filosuyla müşterilerine en kaliteli hizmeti sunmayı hedefler. Müşterilerimizin ihtiyaçlarına göre seçilen araçlar, her zaman güvenli, konforlu ve yeni nesil özelliklere sahiptir.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-          <div class="container-fluid">
-              <ul class="portfolio-grid px-10">    
-                  <!-- Portfolio Item -->
-                  <li class="h caption-2">
-                      <figure><img src="images/car3.jpeg" class="img-responsive w-full h-full" alt="">
-                          <figcaption>
-
-                              <div class="caption-box">
-                                <div class="col-xs-4">
-                                    <p class="m-b-0">Opel</p>
-                                    <p class="small m-t-0">Corsa</p> 
-                                </div>
-                                <div class="col-xs-8">
-                                    <a href="https://wa.me/905456718690?text=Deneme%20mesaj" target="_blank" class="btn btn-red mp-gallery hoverZoomLink" title="Project Description">Hemen Araç Kiralayın</a>
-                                </div>
-                            </div>
-                          </figcaption>
-                      </figure>
-                  </li>
-                  <!-- Portfolio Item -->
-                  <li class="h caption-2">
-                      <figure><img src="images/car.png" class="img-responsive" alt="">
-                          <figcaption>
-                              <div class="caption-box">
-                                  <div class="col-xs-4">
-                                      <p class="m-b-0">Dacia</p>
-                                      <p class="small m-t-0">Duster</p> 
-                                  </div>
-                                  <div class="col-xs-8">
-                                      <a href="images/portfolio2-xl.jpg" class="btn btn-red mp-gallery hoverZoomLink" title="Project Description">Hemen Araç Kiralayın</a>
-                                  </div>
-                              </div>
-                          </figcaption>
-                      </figure>
-                  </li>
-                  <!-- Portfolio Item -->
-                  <li class="h caption-2">
-                      <figure><img src="images/car2.jpeg" class="img-responsive" alt="">
-                          <figcaption>
-                              <div class="caption-box">
-                                  <div class="col-xs-4">
-                                      <p class="m-b-0">Renault</p>
-                                      <p class="small m-t-0">Clio</p> 
-                                  </div>
-                                  <div class="col-xs-8">
-                                      <a href="images/portfolio3-xl.jpg" class="btn btn-red mp-gallery hoverZoomLink" title="Project3 Description">Hemen Araç Kiralayın</a>
-                                  </div>
-                              </div>
-                          </figcaption>
-                      </figure>
-                  </li>
-                  <li class="h caption-2">
-                    <figure><img src="images/car4.png" class="img-responsive" alt="">
-                        <figcaption>
-                            <div class="caption-box">
-                                <div class="col-xs-4">
-                                    <p class="m-b-0">Fiat</p>
-                                    <p class="small m-t-0">Egea</p> 
-                                </div>
-                                <div class="col-xs-8">
-                                    <a href="images/portfolio3-xl.jpg" class="btn btn-red mp-gallery hoverZoomLink" title="Project3 Description">Hemen Araç Kiralayın</a>
-                                </div>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </li>
-                  <!-- Portfolio Item -->
-              </ul><!-- /End Portfolio-Grid -->
-          </div>
-          <div class="container-fluid pt-10">
-            <ul class="portfolio-grid px-10">    
-                <!-- Portfolio Item -->
-                <li class="h caption-2">
-                    <figure><img src="images/car3.jpeg" class="img-responsive w-full h-full" alt="">
-                        <figcaption>
-
-                            <div class="caption-box">
-                              <div class="col-xs-4">
-                                  <p class="m-b-0">Opel</p>
-                                  <p class="small m-t-0">Corsa</p> 
-                              </div>
-                              <div class="col-xs-8">
-                                  <a href="https://wa.me/905456718690?text=Deneme%20mesaj" target="_blank" class="btn btn-red mp-gallery hoverZoomLink" title="Project Description">Hemen Araç Kiralayın</a>
-                              </div>
-                          </div>
-                        </figcaption>
-                    </figure>
-                </li>
-                <!-- Portfolio Item -->
-                <li class="h caption-2">
-                    <figure><img src="images/car.png" class="img-responsive" alt="">
-                        <figcaption>
-                            <div class="caption-box">
-                                <div class="col-xs-4">
-                                    <p class="m-b-0">Dacia</p>
-                                    <p class="small m-t-0">Duster</p> 
-                                </div>
-                                <div class="col-xs-8">
-                                    <a href="images/portfolio2-xl.jpg" class="btn btn-red mp-gallery hoverZoomLink" title="Project Description">Hemen Araç Kiralayın</a>
-                                </div>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </li>
-                <!-- Portfolio Item -->
-                <li class="h caption-2">
-                    <figure><img src="images/car2.jpeg" class="img-responsive" alt="">
-                        <figcaption>
-                            <div class="caption-box">
-                                <div class="col-xs-4">
-                                    <p class="m-b-0">Renault</p>
-                                    <p class="small m-t-0">Clio</p> 
-                                </div>
-                                <div class="col-xs-8">
-                                    <a href="images/portfolio3-xl.jpg" class="btn btn-red mp-gallery hoverZoomLink" title="Project3 Description">Hemen Araç Kiralayın</a>
-                                </div>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="h caption-2">
-                  <figure><img src="images/car4.png" class="img-responsive" alt="">
-                      <figcaption>
-                          <div class="caption-box">
-                              <div class="col-xs-4">
-                                  <p class="m-b-0">Fiat</p>
-                                  <p class="small m-t-0">Egea</p> 
-                              </div>
-                              <div class="col-xs-8">
-                                  <a href="images/portfolio3-xl.jpg" class="btn btn-red mp-gallery hoverZoomLink" title="Project3 Description">Hemen Araç Kiralayın</a>
-                              </div>
-                          </div>
-                      </figcaption>
-                  </figure>
-              </li>
-                <!-- Portfolio Item -->
-            </ul><!-- /End Portfolio-Grid -->
-        </div>
-          <!-- /End Container -->           
-      
-      </section>
+                <div class="container-fluid">
+                    <ul class="portfolio-grid px-10">    
+                        <li class="h caption-2 ">
+                            <figure>
+                                <img src="images/car3.jpeg" class="img-responsive w-full h-full" alt="">
+                                <figcaption>
+                                    <div class="caption-box">
+                                        <div class="col-xs-12 flex items-center justify-around py-5">
+                                            <p class="">2020</p>
+                                            <p class="">Otomatik</p>
+                                            <p class="">Dizel</p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p class="m-b-0">Opel</p>
+                                            <p class="small m-t-0">Corsa</p> 
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <a href="https://wa.me/905456718690?text=Deneme%20mesaj" target="_blank" class="bg-red-600 text-white btn  hoverZoomLink" title="">Hemen Araç Kiralayın</a>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="h caption-2 ">
+                            <figure>
+                                <img src="images/car.png" class="img-responsive" alt="">
+                                <figcaption>
+                                    <div class="caption-box">
+                                        <div class="col-xs-12 flex items-center justify-around py-5">
+                                            <p class="">2020</p>
+                                            <p class="">Otomatik</p>
+                                            <p class="">Dizel</p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p class="m-b-0">Dacia</p>
+                                            <p class="small m-t-0">Duster</p> 
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <a href="https://wa.me/905456718690?text=Deneme%20mesaj" class="btn bg-red-600 text-white hoverZoomLink" title="">Hemen Araç Kiralayın</a>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="h caption-2 ">
+                            <figure>
+                                <img src="images/car2.jpeg" class="img-responsive" alt="">
+                                <figcaption>
+                                    <div class="caption-box">
+                                        <div class="col-xs-12 flex items-center justify-around py-5">
+                                            <p class="">2020</p>
+                                            <p class="">Otomatik</p>
+                                            <p class="">Dizel</p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p class="m-b-0">Renault</p>
+                                            <p class="small m-t-0">Clio</p> 
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <a href="https://wa.me/905456718690?text=Deneme%20mesaj" class="btn bg-red-600 text-white hoverZoomLink" title="">Hemen Araç Kiralayın</a>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="h caption-2">
+                            <figure><img src="images/car4.png" class="img-responsive" alt="">
+                                <figcaption>
+                                    <div class="caption-box">
+                                        <div class="col-xs-12 flex items-center justify-around py-5">
+                                            <p class="">2020</p>
+                                            <p class="">Otomatik</p>
+                                            <p class="">Dizel</p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p class="m-b-0">Fiat</p>
+                                            <p class="small m-t-0">Egea</p> 
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <a href="https://wa.me/905456718690?text=Deneme%20mesaj" class="btn bg-red-600  hoverZoomLink" title="">Hemen Araç Kiralayın</a>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container-fluid">
+                    <ul class="portfolio-grid p-10">    
+                        <li class="h caption-2 ">
+                            <figure>
+                                <img src="images/car3.jpeg" class="img-responsive w-full h-full" alt="">
+                                <figcaption>
+                                    <div class="caption-box">
+                                        <div class="col-xs-12 flex items-center justify-around py-5">
+                                            <p class="">2020</p>
+                                            <p class="">Otomatik</p>
+                                            <p class="">Dizel</p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p class="m-b-0">Opel</p>
+                                            <p class="small m-t-0">Corsa</p> 
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <a href="https://wa.me/905456718690?text=Deneme%20mesaj" target="_blank" class="bg-red-600 text-white btn  hoverZoomLink" title="">Hemen Araç Kiralayın</a>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="h caption-2 ">
+                            <figure>
+                                <img src="images/car.png" class="img-responsive" alt="">
+                                <figcaption>
+                                    <div class="caption-box">
+                                        <div class="col-xs-12 flex items-center justify-around py-5">
+                                            <p class="">2020</p>
+                                            <p class="">Otomatik</p>
+                                            <p class="">Dizel</p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p class="m-b-0">Dacia</p>
+                                            <p class="small m-t-0">Duster</p> 
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <a href="https://wa.me/905456718690?text=Deneme%20mesaj" class="btn bg-red-600 text-white hoverZoomLink" title="">Hemen Araç Kiralayın</a>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="h caption-2 ">
+                            <figure>
+                                <img src="images/car2.jpeg" class="img-responsive" alt="">
+                                <figcaption>
+                                    <div class="caption-box">
+                                        <div class="col-xs-12 flex items-center justify-around py-5">
+                                            <p class="">2020</p>
+                                            <p class="">Otomatik</p>
+                                            <p class="">Dizel</p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p class="m-b-0">Renault</p>
+                                            <p class="small m-t-0">Clio</p> 
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <a href="https://wa.me/905456718690?text=Deneme%20mesaj" class="btn bg-red-600 text-white hoverZoomLink" title="">Hemen Araç Kiralayın</a>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="h caption-2">
+                            <figure><img src="images/car4.png" class="img-responsive" alt="">
+                                <figcaption>
+                                    <div class="caption-box">
+                                        <div class="col-xs-12 flex items-center justify-around py-5">
+                                            <p class="">2020</p>
+                                            <p class="">Otomatik</p>
+                                            <p class="">Dizel</p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p class="m-b-0">Fiat</p>
+                                            <p class="small m-t-0">Egea</p> 
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <a href="https://wa.me/905456718690?text=Deneme%20mesaj" class="btn bg-red-600  hoverZoomLink" title="">Hemen Araç Kiralayın</a>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         <!-- =========================
         FEATURES SECTION 
         ============================== -->
         <section id="features5-1" class="p-y-lg bg-edit">
-            <div class="container">
+            <div class="container-fluid">
                 <!-- Section Header -->
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
