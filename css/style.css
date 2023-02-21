@@ -2954,7 +2954,7 @@ a.share {
 
 .screenshots .portfolio-grid li {
     width: 30%;
-    margin: 0 10px;
+    margin: 0;
 }
 
 .carousel-app div[class^="col-"] {
