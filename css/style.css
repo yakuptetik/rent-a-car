@@ -2723,9 +2723,7 @@ textarea {
 /* ==========================================================================
    15. CLIENTS SECTION
 ========================================================================== */
-.clients {
-    margin: 0 auto;
-}
+
 
 .clients img {
     display: inline-block;
@@ -4473,7 +4471,7 @@ input.toggle-round-flat:checked + label:after {
 .comments-list .comment-info .reply {
     font-size: 15px;
     font-weight: 900;
-    padding-left: 10px;
+    padding-left: 10pxclients
 }
 
 .comments-list .comment-info .reply i{
