@@ -911,7 +911,7 @@ a.btn-app {
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
-    background: #439FE0 url("../images/top-arrow.svg") no-repeat center 50%;
+    background: #d60404 url("../images/top-arrow.svg") no-repeat center 50%;
     visibility: hidden;
     opacity: 0;
     -webkit-transition: opacity .3s 0s, visibility 0s .3s;
@@ -928,10 +928,7 @@ a.btn-app {
     visibility: visible;
     opacity: 1;
 }
-.top.fade-out {
-    /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
-    opacity: .5;
-}
+
 .no-touch .top:hover {
     background-color: #e86256;
     opacity: 1;
