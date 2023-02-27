@@ -60,7 +60,7 @@
         <header id="nav1-1">
             <nav class="navbar fixed z-10 left-0 right-0 bg-transparent">
                 <div class=" flex items-center justify-between max-[991px]:justify-center px-[60px]"> 
-                    <div class="navbar-header">
+                    <div class="navbar-header flex items-center">
                         <a href="" class="navbar-brand smooth-scroll">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0px" y="0px" width="209px" height="51px" viewBox="0 0 209 51" enable-background="new 0 0 209 51">
                                 <g>
@@ -79,6 +79,7 @@
                             </g>
                             </svg>
                         </a>
+                        <div id="31" class="text-black text-3xl pl-3">  </div>
                     </div>
                     <div class="max-[902px]:hidden">
                         <ul class="nav max-[991px]:hidden navbar-nav navbar-right">
@@ -1106,6 +1107,12 @@
     <script src="js/plugins/picker.date.js"></script>
     <!-- Custom Script -->
     <script src="js/custom.js"></script>
+
+<script>
+    fetch('https://ipgeolocation.abstractapi.com/v1/?api_key=2b1dae796fba4614bface662a27962d8').then((res) => res.json()).then((data) => {
+        document.getElementById('31').textContent = data.region;
+    })
+</script>
 
     
 
